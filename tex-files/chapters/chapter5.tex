@@ -1,0 +1,46 @@
+\chapter{Lorem ipsum dolor sit amet}
+    \label{chap:capitulo5}
+
+\newthought{Lorem ipsum dolor sit amet}, consectetuer\analyticentry{Consectetuer} adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat\analyticentry{Volutpat}.
+
+\begin{lstlisting}[language = R, caption = R example]
+# Load libraries
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Load your dataset (replace 'your_dataset.csv' with your actual dataset file). 
+# If your dataset is a CSV file named 'data.csv', you would use read.csv("data.csv"). If your data is in a different format or location, adjust accordingly.
+
+your_data <- read.csv("your_dataset.csv")
+
+# Scatter plot
+
+ggplot(your_data, aes(x = independent_variable, y = dependent_variable)) +
+       geom_point() +
+       labs(title = "Scatter Plot")
+
+# Linear regression model
+
+lm_model <- lm(dependent_variable ~ independent_variable, data = your_data)
+summary(lm_model)
+
+# Plot the regression line
+
+ggplot(your_data, aes(x = independent_variable, y = dependent_variable)) +
+       geom_point() +
+       geom_smooth(method = "lm", se = FALSE, color = "blue") +
+       labs(title = "Linear Regression")
+
+# Make predictions
+
+new_data <- data.frame(independent_variable = c(new_values))
+predictions <- predict(lm_model, newdata = new_data)
+print(predictions)
+\end{lstlisting}
+
+\lipsum[2]
+
+% The command \lstinputlisting[language = Octave]{BitXorMatrix.m} imports the code from the file BitXorMatrix.m, the additional parameter in between brackets enables language highlighting for the Octave programming language. If you need to import only part of the file you can specify two comma-separated parameters inside the brackets. For instance, to import the code from the line 2 to the line 12, the previous command becomes \lstinputlisting[language = Octave, firstline = 2, lastline = 12]{BitXorMatrix.m} If firstline or lastline is omitted, it's assumed that the values are the beginning of the file, or the bottom of the file, respectively.
+% Check: https://www.overleaf.com/learn/latex/Code_listing

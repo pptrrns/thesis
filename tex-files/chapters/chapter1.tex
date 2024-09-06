@@ -1,0 +1,21 @@
+\begin{savequote}[85mm]
+  \small{Nulla facilisi. In vel sem. Morbi id urna in diam dignissim feugiat. Proin molestie tortor eu velit. Aliquam erat volutpat. Nullam ultrices, diam tempus vulputate egestas, eros pede varius leo.
+  \qauthor{Quoteauthor Lastname}}
+\end{savequote}
+
+\chapter{Lorem Ipsum}
+    \label{chap:introduction}
+
+\newthought{A beautiful} \LaTeX\ templatefor a thesis/dissertation at the \emph{Instituto Tecnológico Autónomo de México} (ITAM). The template is based on the \href{https://github.com/suchow/Dissertate}{Dissertate} template and includes everything needed to support the production and typesetting of a B.A./B.S. dissertation. To get started, follow these steps: (\emph{i}) install \LaTeX\; (\emph{ii}) install the default fonts: EB Garamond, Lato, and Source Code Pro. The font files are provided in the folder \texttt{fonts}; (\emph{iii}) personalize the document by filling out your information in \texttt{frontmatter/personalize.tex} and in \texttt{endmatter/personalize.tex}; (\emph{iv}) customize the abstract, preface, and acknowledgments in the \texttt{frontmatter} folder; (\emph{v}) edit the files located in \texttt{chapters} to add the content of your thesis (chapters and appendices); (\emph{vi}) build your thesis with \texttt{XeLaTeX}.
+
+The \texttt{references.bib} file contains the references. By default, the references are cited in the \href{https://connect.apsanet.org/stylemanual}{APSA} style. Use the command \texttt{\string\citep\{\}} to manage the references.
+
+\texttt{\string\citep\{sen1995, angrist2015\}} $\longrightarrow$ \citep{sen1995, angrist2015}
+
+\texttt{\string\citep[pg.\~32]\{sen1977\}} $\longrightarrow$ \citep[pg.~32]{sen1977}
+
+\texttt{\string\citep\{sen1995\}} $\longrightarrow$ \citep{sen1995}
+
+\texttt{\string\citep[véase][pp.\~5]\{sen1995\}} $\longrightarrow$ \citep[\emph{véase}][pg.~5]{sen1995}
+
+\texttt{\string\citep[Chap.\~5]\{angrist2015\}} $\longrightarrow$ \citep[Chap.~5]{angrist2015}

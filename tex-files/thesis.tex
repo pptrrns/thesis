@@ -1,0 +1,42 @@
+% !TEX TS-program = xelatex
+
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass{Dissertate}
+
+\begin{document}
+
+\onehalfspacing
+
+\setlength{\parskip}{0.5em}
+
+\input{frontmatter/personalize}
+
+\frontmatter
+
+    \setcounter{chapter}{0}
+    \include{chapters/chapter1}
+    \include{chapters/chapter2}
+    \include{chapters/chapter3}
+    \include{chapters/chapter4}
+    \include{chapters/chapter5}
+    \include{chapters/chapter6}
+
+   \phantomsection
+   \addcontentsline{toc}{chapter}{Apéndice A}
+   \hypertarget{apendiceA}{}
+
+   \phantomsection
+   \addcontentsline{toc}{chapter}{Apéndice B}
+   \hypertarget{apendiceB}{}
+
+    \backmatter
+
+    \printindex[analytic]
+    \addcontentsline{toc}{chapter}{Índice Analítico}
+
+\newpage
+ \thispagestyle{empty}
+ \include{endmatter/colophon}
+
+\end{document}
