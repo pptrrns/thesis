@@ -22,8 +22,8 @@ repos:
 repos:
   - repo: local
     hooks:
-      - id: rm-latex
+      - id: rm-tex
         name: Remove LaTeX Auxiliary Files
-        entry: .pre-commit-hooks.d/rm-latex.sh
+        entry: .pre-commit-hooks.d/rm-tex.sh
         language: script
         types: [text]
