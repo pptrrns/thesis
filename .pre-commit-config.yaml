@@ -18,3 +18,12 @@ repos:
         entry: .pre-commit-hooks.d/bib-tidy.sh
         language: script
         types: [text]
+
+repos:
+  - repo: local
+    hooks:
+      - id: rm-latex
+        name: Remove LaTeX Auxiliary Files
+        entry: .pre-commit-hooks.d/rm-latex.sh
+        language: script
+        types: [text]
