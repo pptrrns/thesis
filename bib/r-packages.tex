@@ -1,0 +1,82 @@
+%%%% Tex
+
+%%%% Mariana Sánchez Mendoza
+%%%% José Ángel Torrens Hernández
+
+%%%%
+
+\documentclass[letterpaper, 10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth, totalheight=\textheight, keepaspectratio}
+\graphicspath{{plots/}{./}}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{units}
+\usepackage{booktabs}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage[notes, backend=biber]{biblatex-chicago}
+\bibliography{references}
+\usepackage{citeall}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{lstautogobble}
+\usepackage{color}
+\usepackage{zi4}
+
+\definecolor{bluekeywords}{rgb}{0.0, 0.5, 1.0}
+\definecolor{redstrings}{rgb}{1.0, 0.13, 0.32}
+\definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
+
+\usepackage{listings}
+\lstset{ autogobble, columns=fullflexible, showspaces=false, showtabs=false, breaklines=true, showstringspaces=false, breakatwhitespace=true, escapeinside={(*@}{@*)}, commentstyle=\color{greencomments}, keywordstyle=\color{bluekeywords}, stringstyle=\color{redstrings}, numberstyle=\color{graynumbers}, basicstyle=\ttfamily\footnotesize, frame=l, framesep=12pt, xleftmargin=12pt, tabsize=4, captionpos=b }
+
+%%%% Links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=bluekeywords,
+    filecolor=bluekeywords,
+    urlcolor=bluekeywords,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\setlength{\parindent}{0cm}
+\setlength{\baselineskip}{18pt}
+
+%%%% Abstract
+\renewcommand{\abstractname}{Descripción}
+
+%%%% Geometry
+\usepackage[
+    left=2.5cm,
+    top=3cm,
+    right=2.5cm,
+    bottom=3cm,
+    bindingoffset=0cm,
+    footnotesep=1cm,
+    footskip=1cm
+]{geometry}
+
+%%% Título
+\title{%
+\textbf{R Packages Bibliography} }
+
+\date{\vspace{-5ex}} % No date
+
+%%%% Document
+\begin{document}
+\maketitle
+
+\nocite{*}
+\printbibliography
+[heading = none]
+
+\end{document}
