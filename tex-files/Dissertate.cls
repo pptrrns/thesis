@@ -133,9 +133,9 @@
     xleftmargin = 24pt,
     tabsize = 2,
     captionpos = t,
-    breaklines = true,                  
-    keepspaces = true,                 
-    numbers = left,                    
+    breaklines = true,
+    keepspaces = true,
+    numbers = left,
     numbersep = 5pt,
     frame = none,
     numberstyle = \ttfamily\color{grey}
@@ -370,16 +370,16 @@
 	\maketitle
 
 	\copyrightpage
-	
+
 	\frontispiece
-	
+
 	\newpage
 	\blankpage
 
 	\dedicationpage
-	
+
 	\acknowledgments
-	
+
 	\abstractpage
 	\preface
 
@@ -389,7 +389,7 @@
 	\listoffigures
 	\phantomsection
 	\addcontentsline{toc}{chapter}{Índice de figuras}		% Rename List of Figures to "Índice de figuras"
-	
+
 	\listoftables
 	\phantomsection
 	\addcontentsline{toc}{chapter}{Índice de cuadros}		% Rename List of tables to "Índice de tablas"
@@ -422,7 +422,7 @@
 	\vspace{-15pt}
 	\includegraphics[width = 285pt]{figures/logo.pdf}\\
 	\vspace{35pt}
-	\LARGE \textcolor{grey}{\thetitle}\\ 
+	\LARGE \textcolor{grey}{\thetitle}\\
 	\normalsize
 	\vspace{35pt}
 	\@investigation \\

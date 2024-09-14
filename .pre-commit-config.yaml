@@ -19,12 +19,6 @@ repos:
         language: script
         types: [text]
 
-    -   id: rm-tex
-        name: Remove LaTeX Auxiliary Files
-        entry: .pre-commit-hooks.d/rm-tex.sh
-        language: script
-        types: [text]
-
 -   repo: https://github.com/cmhughes/latexindent.pl.git
     rev: V3.24.4
     hooks:

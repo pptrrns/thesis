@@ -9,7 +9,7 @@
 % The file harvard.tex has the documentation for this style.
 
 % ACKNOWLEDGEMENT:
-%   This document is a modified version of alpha.bst and apsr.bst to which it owes much of its functionality. 
+%   This document is a modified version of alpha.bst and apsr.bst to which it owes much of its functionality.
 %   It has been adapted to produce American Political Science Association style references
 
 % Original Author
@@ -495,7 +495,7 @@ FUNCTION {format.article.crossref}
     }
     { "{\em in} \citeasnoun{" crossref * "}" * }
   if$
- 
+
 }
 
 FUNCTION {format.book.crossref}
@@ -544,7 +544,7 @@ FUNCTION {format.incoll.inproc.crossref}
     }
     { "{\em in} \citeasnoun{" crossref * "}" * }
   if$
-  
+
 }
 
 INTEGERS { len }
@@ -907,7 +907,7 @@ FUNCTION {inproceedings}
     { " Paper presented at the " output                 %use "Paper presented at" lead
         booktitle "," * output                          %add comma after conference title
         address "." output.check                             %add city with period
-      new.block 
+      new.block
 %      format.bvolume output
 %      format.number.series output
 %       address "." output %empty$
@@ -951,7 +951,7 @@ FUNCTION {manual}
       if$
     }
     { format.address output
-      organization output  
+      organization output
     }
   if$
   new.block
@@ -1233,7 +1233,7 @@ FUNCTION {preliminaries} %%%XXX change
       'etal.required :=
     }
     {
-      editor.field field.used = 
+      editor.field field.used =
         {
           editor num.names$ #2 >
             { #1 }
@@ -1286,7 +1286,7 @@ FUNCTION {initialize.confusion}
 
 FUNCTION {confusion.pass}
 { last.sort.label sort.label =
-    { last.etal.allowed 
+    { last.etal.allowed
         { last.full.label make.full.label sortify.names =
             { skip$ }
             { #0 'etal.allowed :=

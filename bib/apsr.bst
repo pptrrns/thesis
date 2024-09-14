@@ -452,7 +452,7 @@ FUNCTION {format.article.crossref}
     }
     { "{\em in} \citeasnoun{" crossref * "}" * }
   if$
- 
+
 }
 
 FUNCTION {format.book.crossref}
@@ -501,7 +501,7 @@ FUNCTION {format.incoll.inproc.crossref}
     }
     { "{\em in} \citeasnoun{" crossref * "}" * }
   if$
-  
+
 }
 
 INTEGERS { len }
@@ -891,7 +891,7 @@ FUNCTION {manual}
       if$
     }
     { format.address output
-      organization output  
+      organization output
     }
   if$
   new.block
@@ -1207,7 +1207,7 @@ FUNCTION {preliminaries} %%%XXX change
       'etal.required :=
     }
     {
-      editor.field field.used = 
+      editor.field field.used =
         {
           editor num.names$ #2 >
             { #1 }
@@ -1260,7 +1260,7 @@ FUNCTION {initialize.confusion}
 
 FUNCTION {confusion.pass}
 { last.sort.label sort.label =
-    { last.etal.allowed 
+    { last.etal.allowed
         { last.full.label make.full.label sortify.names =
             { skip$ }
             { #0 'etal.allowed :=
