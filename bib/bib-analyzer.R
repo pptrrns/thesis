@@ -28,7 +28,7 @@ df_bib %>%
     x = as.factor(year),
     y = reorder(bibtexkey, desc(year)),
     color = category
-  )) + 
+  )) +
   geom_point(size = 2) +
   labs(
     x = "Publication Year",
@@ -36,8 +36,8 @@ df_bib %>%
     title = "Publication Year and Author of References",
     subtitle = "An Overview of Reference Trends"
   ) +
-  theme_bw() + 
-  scale_color_manual(values = c("#F5025D", "#438EF7", "#009B77")) + 
+  theme_bw() +
+  scale_color_manual(values = c("#F5025D", "#438EF7", "#009B77", "green", "purple", "royalblue", "pink", "magenta")) +
   theme(
     text = element_text(family = "Roboto"),
     plot.title = element_text(

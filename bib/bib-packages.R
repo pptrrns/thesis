@@ -11,7 +11,7 @@
 
 library(report)
 library(knitr)
-library(MatchIt)
+library(pscl)
 library(conflicted)
 
 #----- Manage package citations
@@ -20,9 +20,9 @@ library(conflicted)
 
 report::cite_packages()
 
-# Generate BibTeX citation for a specific package (e.g., MatchIt)
+# Generate BibTeX citation for a specific package
 
-toBibtex(citation("MatchIt"))
+toBibtex(citation("pscl")) # "dwnom"
 
 # Note: To use citation entries generated from toBibtex(), you typically need to copy the output manually to
 # a .bib file and add citation keys manually (e.g., change @Manual{, to @Manual{R-MatchIt,).
@@ -31,4 +31,4 @@ toBibtex(citation("MatchIt"))
 # and automatically adds citation keys.  This writes the BibTeX entries for the currently loaded packages
 # and specified additional packages (e.g., tidyverse, stargazer, janitor) to a .bib file.
 
-knitr::write_bib(c(.packages(), "MatchIt"), "r-packages.bib")
+knitr::write_bib(c(.packages(), "pscl"), "r-packages.bib")
